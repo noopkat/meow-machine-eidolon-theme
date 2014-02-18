@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	{{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />	
+
+	{{! Styles }}
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700,800,100italic,300italic,400italic,700italic&subset=latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+
+    {{! Responsive Meta Tags }}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	{{ghost_head}}	
+</head>
+
+<body class="{{body_class}}">
+	<div class="wrapper_eidolon">
+		{{{body}}}
+	
+	{{ghost_foot}}
+	<script type="text/javascript">
+	function checkWidth(init)
+	{
+		/*If browser resized, check width again */
+		if ($(window).width() < 640) {
+			$('body').addClass('mobile');
+			$('.mobile .article_eidolon .dateholder_eidolon').each(function () {
+			if (!$(this).text().match(/^\s*$/)) {
+				$(this).insertBefore($(this).prev('.more_eidolon'));
+			}
+			});	
+		}
+		else {
+			if (!init) {
+				$('body').removeClass('mobile');
+			}
+		}
+	}
+	$( document ).ready(function() {
+
+		 checkWidth(true);
+
+		$(window).resize(function() {
+			checkWidth(false);
+		});
+	
+		$(".main_eidolon article:first-child").addClass("first");
+		$(".main_eidolon article:nth-child(odd)").addClass("secondary");
+		$(".main_eidolon article:nth-child(even)").addClass("secondary");
+		$(".main_eidolon article:first-child").removeClass("secondary");
+		
+		$('.article_eidolon.secondary .dateholder_eidolon').each(function () {
+		if (!$(this).text().match(/^\s*$/)) {
+			$(this).insertBefore($(this).prev('.more_eidolon'));
+		}
+		});	
+
+(function ( window, document, undefined ) {
+
+    /*
+    * Grab all iframes on the page or return
+    */
+    var iframes = document.getElementsByTagName( 'iframe' );
+
+    /*
+    * Loop through the iframes array
+    */
+    for ( var i = 0; i < iframes.length; i++ ) {
+
+        var iframe = iframes[i],
+
+        /*
+        * RegExp, extend this if you need more players
+        */
+        players = /www.youtube.com|player.vimeo.com/;
+
+        /*
+        * If the RegExp pattern exists within the current iframe
+        */
+        if ( iframe.src.search( players ) > 0 ) {
+
+            /*
+            * Calculate the video ratio based on the iframe's w/h dimensions
+            */
+            var videoRatio        = ( iframe.height / iframe.width ) * 100;
+            
+            /*
+            * Replace the iframe's dimensions and position
+            * the iframe absolute, this is the trick to emulate
+            * the video ratio
+            */
+            iframe.style.position = 'absolute';
+            iframe.style.top      = '0';
+            iframe.style.left     = '0';
+            iframe.width          = '100%';
+            iframe.height         = '100%';
+            
+            /*
+            * Wrap the iframe in a new <div> which uses a
+            * dynamically fetched padding-top property based
+            * on the video's w/h dimensions
+            */
+            var wrap              = document.createElement( 'div' );
+            wrap.className        = 'fluid-vids';
+            wrap.style.width      = '100%';
+            wrap.style.position   = 'relative';
+            wrap.style.paddingTop = videoRatio + '%';
+            
+            /*
+            * Add the iframe inside our newly created <div>
+            */
+            var iframeParent      = iframe.parentNode;
+            iframeParent.insertBefore( wrap, iframe );
+            wrap.appendChild( iframe );
+
+
+
+
+			var hrap              = document.createElement( 'div' );
+            hrap.className        = 'fluidwrapper';
+                        
+            /*
+            * Add the iframe inside our newly created <div>
+            */
+            var iframeParent      = wrap.parentNode;
+            iframeParent.insertBefore( hrap, wrap );
+            hrap.appendChild( wrap );
+
+
+			
+
+        }
+
+    }
+
+})( window, document );
+		
+		
+		
+	});
+	</script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-10750248-9', 'noopkat.com');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

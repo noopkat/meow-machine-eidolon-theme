@@ -1,0 +1,667 @@
+/*
+Eidolon Stylesheet
+by Wojtek Zeglin
+http://zeglin.co.uk
+*/
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+body {
+	background: url(../img/greyzz.png) repeat;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	color: #333;
+}
+img { max-width: 100% !important; }
+a {
+	color: #ff7200;
+	text-decoration: none;
+}
+a:hover {
+	color: #ff8828;
+}
+
+.logo_eidolon img {
+	margin: 0 auto;
+	display: block;
+}
+
+.post-template ul {
+	list-style: none;
+	margin: 0 0 2.5em 0; padding: 0;
+}
+.post-template ol {margin: 0 0 2.5em 0; padding: 0 0 0 40px;}
+.post-template ul ul,
+.post-template ul ul ul,
+.post-template ul ul ul ul,
+.post-template ol ol,
+.post-template ol ol ol,
+.post-template ol ol ol ol {
+	margin: 0;
+}
+
+.post-template ul li:before {
+	font-family: 'entypo', sans-serif;
+	color: #9FD5B9;
+	content: "\E75E";
+	padding: 0 20px 0 0px;
+}
+.post-template ul li,
+.post-template ol li {
+	line-height: 2em;
+}
+
+.post-template ul li:before {
+	font-family: 'entypo', sans-serif;
+	content: "\E75E";
+}
+.post-template ul li {
+	padding: 0 0 0 20px;
+}
+.post-template blockquote p {
+	font-size: 2em;
+}
+.post-template blockquote p:before {
+	content: "\275E";
+	padding: 0 30px 0 0;
+	font-size: 3em;
+	color: #9FD5B9;;
+}
+.post-template pre {
+background: #efefef;
+padding: 20px;
+margin: 0 0 3em 0;
+}
+.post-template hr {
+margin: 0 0 3em 0;
+}
+
+.post-template input[type="text"] {
+    border: 2px solid #cfd6da;
+	border-radius: 7px;
+    color: #3F4549;
+    cursor: text;
+    font-family: "Helvetica Neue",helvetica,arial,sans-serif;
+    font-size: 1.5em;
+    height: auto;
+    line-height: 1.4;
+    margin: 0;
+    padding: 10px 10px 12px;
+    resize: none;
+    transition: all 0.15s ease-in-out 0s;
+}
+
+
+.wrapper_eidolon {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.header_eidolon {
+	margin: 4em 0 5em 0;
+}
+
+h1.blogtitle_eidolon {
+	font-size: 4em;
+	font-weight: 800;
+	letter-spacing: -0.025em;
+	text-align: center;
+	margin: 0;
+}
+
+h2.blogdescription_eidolon  {
+	font-size: 0.75em;
+	letter-spacing: 0.2em;
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2.posttitle_eidolon {
+	font-weight: 300;
+	font-size: 2.5em;
+	letter-spacing: -0.025em;
+	margin: 0.6em 0 0.5em
+}
+
+.post-template .singleposttitle_eidolon {
+	font-weight: 300;
+	font-size: 3em;
+	letter-spacing: -0.025em;
+	margin: 0.5em 0 1em 0;
+	text-align: center;
+}
+
+.post-template header {
+	margin: 0 0 4em 0;
+}
+.post-template .postcontent_eidolon p {
+	margin: 0 0 2.5em 0;
+	line-height: 1.75em;
+	}
+
+
+
+.main_eidolon .article_eidolon {
+	background: #fff;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+	padding: 5px 30px 30px 30px;
+	margin: 0 0 120px 0;
+	position: relative;
+}
+.main_eidolon .article_eidolon:last-child {
+	margin: 0 0 30px 0;
+}
+.post-template .article_eidolon {
+	margin: 0 0 60px 0;
+}
+.postimage_eidolon img,
+.postimage_eidolon iframe {
+	padding: 25px 0 1px 0;
+	border-bottom: 5px solid #9fd5b9;
+}
+.fluidwrapper {
+	padding: 0 0 2em 0;
+}
+
+
+.postimage_eidolon p {
+	margin: 0;
+	padding: 0;
+}
+
+.footer_eidolon,
+.pagination_eidolon {
+	clear: both;
+	overflow: hidden;
+}
+.excerpt_eidolon {
+	line-height: 1.75em;
+	margin: 0 0 2.75em 0;
+}
+.posttags_eidolon {
+    float: left;
+    width: 33%;
+	padding: 5px 0 0;
+}
+.posttags_eidolon .text {
+	color: #333333;
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+	font-weight: 700;
+}
+.date_eidolon {
+	color: #333333;
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+	display: block;
+	padding: 0 0 2px 0;
+	font-weight: 700;
+}
+.more_eidolon {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    width: 34%;
+	font-weight: 700;	
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.dateholder_eidolon {
+    float: right;
+    text-align: right;
+    width: 33%;
+	padding: 5px 0 0;
+}
+.dateholder_eidolon span {
+	width: 30px;
+	height: 27px;
+	padding: 3px 0 0 0;
+	display: block;
+	background: #9fd5b9;
+	text-align: center;
+	color: #fff;
+	float: right;
+	margin: -6px 0 0 10px;
+}
+.posttags_eidolon span {
+	width: 30px;
+	height: 27px;
+	padding: 3px 0 0 0;
+	display: block;
+	background: #9fd5b9;
+	text-align: center;
+	color: #fff;
+	float: left;
+	margin: -6px 10px 0 0;
+}
+
+.sharepost_eidolon {
+	clear: both;
+	overflow: hidden;
+	margin: 120px 0 0 0;
+	padding: 15px 0 0 0;
+	border-top: 1px dotted #FF7200;
+}
+a.share_eidolon {
+float: left;
+margin: 0 40px 0 0;
+}
+.sharepost_eidolon h4 {
+float: left;
+margin: 0 30px 0 0;
+}
+
+.postfooter_eidolon {
+margin: 20px 0 0 0;
+clear: both;
+overflow: hidden;
+padding: 60px 10px 30px 10px;
+border-top: 1px dotted #FF7200;
+}
+.post-template .postfooter_eidolon a {
+color: #FF7200;
+}
+.post-template .postfooter_eidolon a:hover {
+color: #ff8828;
+}
+
+.post-template .postfooter_eidolon .authorimage_eidolon img {
+	height: 120px;
+	width: 120px;
+	border-radius: 60px;
+	box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.post-template .postfooter_eidolon .fleft {
+	width: 75%;
+	}
+.authorimage_eidolon {
+float: left;
+margin: 0 60px 0 0;
+
+}
+.authorname_eidolon{
+float: left;
+margin: 0 30px 0 0;
+}
+.authorwebsite_eidolon {
+float: left;
+margin: 0 30px 0 0;
+}
+.authorbio_eidolon {
+float: left;
+
+}
+
+
+.pagination {
+    margin: 0;
+    padding: 50px 0;
+    position: relative;
+    text-align: center;
+	font-weight: 700;	
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.older-posts {
+    right: 3%;
+}
+.newer-posts {
+	left: 3%;
+}
+.older-posts, .newer-posts {
+    position: absolute;
+    transition: color 0.3s ease 0s;
+}
+.new {
+	position: absolute;
+	background: url(../img/new-badge.png) no-repeat top left;
+	width: 145px;
+	height: 145px;
+	top: -2px;
+	left: -2px;
+  display: none;
+}
+.archive-template span.new,
+.secondary span.new {
+	display: none;
+}
+
+
+
+
+
+
+
+footer.footer_eidolon {
+background: #9fd5b9;
+padding: 45px 0 40px 0;
+margin: 30px 0 0 0;
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #fff;
+}
+footer a{color:#2fa467;}
+footer a:hover {color: #258955;}
+
+.post-template footer.footer_eidolon {
+margin: 60px 0 0 0;
+}
+
+
+.subscribe_eidolon span {
+	font-size: 3em;
+	font-weight: 300;
+}
+
+.fleft {float:left; padding: 10px 0 0 0;}
+.frite {float:right;}
+
+
+
+/*--------------------------------------------------------- 970 px -------------------------------------- */
+@media only screen and (max-width: 970px) {
+
+.wrapper_eidolon {
+	width: inherit;
+	padding: 0 20px;
+}
+.postimage_eidolon img, .postimage_eidolon iframe, .postcontent_eidolon p img {
+	max-width: 100%;
+	padding: 15px 0 1px 0;
+}
+h2.posttitle_eidolon {
+	font-size: 2em;
+}
+.post-template header {
+	margin: 0 0 2em 0;
+	clear: both;
+	overflow: hidden;
+}
+.main_eidolon .article_eidolon {
+	padding: 5px 20px 20px 20px;
+	clear: both;
+	overflow: hidden;
+}
+.mobile .main_eidolon .article_eidolon .posttags_eidolon,
+.mobile .main_eidolon .article_eidolon .more_eidolon,
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon,
+.main_eidolon .article_eidolon.secondary .posttags_eidolon,
+.main_eidolon .article_eidolon.secondary .more_eidolon,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon {
+	width: 90%;
+	clear: both;
+	overflow: hidden;
+	float: left;
+	margin: 0 0 10px 0;
+	text-align: left;
+}
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon {
+margin: 0 0 2.5em 0;
+}
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon span,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon span {
+float: left;
+margin: -6px 10px 0 0;
+}
+
+
+}
+
+/*--------------------------------------------------------- 768 px -------------------------------------- */
+@media only screen and (max-width: 768px) {
+
+.wrapper_eidolon {
+	width: inherit;
+	padding: 0 20px;
+}
+.postimage_eidolon img, .postimage_eidolon iframe, .postcontent_eidolon p img {
+	max-width: 100%;
+	padding: 15px 0 1px 0;
+}
+h2.posttitle_eidolon {
+	font-size: 2em;
+}
+.post-template .singleposttitle_eidolon {
+	font-size: 2.5em;
+}
+.main_eidolon .article_eidolon {
+	padding: 5px 20px 20px 20px;
+	clear: both;
+	overflow: hidden;
+}
+.post-template .postfooter_eidolon .fleft {
+width: 65%;
+}
+.mobile .main_eidolon .article_eidolon .posttags_eidolon,
+.mobile .main_eidolon .article_eidolon .more_eidolon,
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon,
+.main_eidolon .article_eidolon.secondary .posttags_eidolon,
+.main_eidolon .article_eidolon.secondary .more_eidolon,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon {
+	width: 90%;
+	clear: both;
+	overflow: hidden;
+	float: left;
+	margin: 0 0 10px 0;
+	text-align: left;
+}
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon {
+margin: 0 0 2.5em 0;
+}
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon span,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon span {
+float: left;
+margin: -6px 10px 0 0;
+}
+
+
+}
+
+/*--------------------------------------------------------- 640 px -------------------------------------- */
+@media only screen and (max-width: 640px) {
+
+.wrapper_eidolon {
+	width: inherit;
+	padding: 0 10px;
+}
+.postimage_eidolon img, .postimage_eidolon iframe {
+	max-width: 100%;
+	padding: 15px 0 1px 0;
+}
+h2.posttitle_eidolon {
+	font-size: 1.5em;
+}
+.post-template .singleposttitle_eidolon {
+	font-size: 2em;
+}
+.main_eidolon .article_eidolon {
+	padding: 5px 20px 20px 20px;
+	clear: both;
+	overflow: hidden;
+}
+.post-template .postfooter_eidolon .fleft {
+width: 55%;
+}
+.mobile .main_eidolon .article_eidolon .posttags_eidolon,
+.mobile .main_eidolon .article_eidolon .more_eidolon,
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon,
+.main_eidolon .article_eidolon.secondary .posttags_eidolon,
+.main_eidolon .article_eidolon.secondary .more_eidolon,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon {
+	width: 90%;
+	clear: both;
+	overflow: hidden;
+	float: left;
+	margin: 0 0 10px 0;
+	text-align: left;
+}
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon {
+margin: 0 0 2.5em 0;
+}
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon span,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon span {
+float: left;
+margin: -6px 10px 0 0;
+}
+.fleft {float:left;}
+.frite {float:left; clear: both;overflow:hidden; margin: 30px 0 0 0;}
+
+
+
+}
+
+/*--------------------------------------------------------- 480 px -------------------------------------- */
+@media only screen and (max-width: 480px) {
+
+.wrapper_eidolon {
+	width: inherit;
+	padding: 0 10px;
+}
+.postimage_eidolon img, .postimage_eidolon iframe {
+	max-width: 100%;
+	padding: 15px 0 1px 0;
+}
+h2.posttitle_eidolon {
+	font-size: 1.5em;
+}
+.main_eidolon .article_eidolon {
+	padding: 5px 20px 20px 20px;
+	clear: both;
+	overflow: hidden;
+}
+h4.share_eidolon {
+	width: 100%;
+	margin: 0 0 1em 0;
+	text-align: center;
+}
+.sharepost_eidolon {
+	text-align: center;
+}
+a.share_eidolon {float: none;}
+a.share_eidolon:last-child {margin: 0;}
+
+.authorimage_eidolon,
+.authorname_eidolon,
+.authorwebsite_eidolon {
+float: none;
+margin: 0 auto;
+text-align: center;
+}
+.post-template .postfooter_eidolon .fleft {
+width: 100%;
+float: none;
+margin: 0;
+text-align: center;
+}
+
+.mobile .main_eidolon .article_eidolon .posttags_eidolon,
+.mobile .main_eidolon .article_eidolon .more_eidolon,
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon,
+.main_eidolon .article_eidolon.secondary .posttags_eidolon,
+.main_eidolon .article_eidolon.secondary .more_eidolon,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon {
+	width: 90%;
+	clear: both;
+	overflow: hidden;
+	float: left;
+	margin: 0 0 10px 0;
+	text-align: left;
+}
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon {
+margin: 0 0 2.5em 0;
+}
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon span,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon span {
+float: left;
+margin: -6px 10px 0 0;
+}
+.pagination {
+	position: inherit;
+}
+.page-number {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+	margin: 0 0 20px 0;
+}
+
+
+}
+
+
+/*------------------------------------------------------------------------------ 320 px --------------------- */
+@media only screen and (max-width: 320px) {
+
+.wrapper_eidolon {
+	width: inherit;
+	padding: 0 10px;
+}
+.postimage_eidolon img, .postimage_eidolon iframe {
+	max-width: 240px;
+	padding: 15px 0 1px 0;
+}
+h2.posttitle_eidolon {
+	font-size: 1.5em;
+}
+.main_eidolon .article_eidolon {
+	padding: 5px 20px 20px 20px;
+	clear: both;
+	overflow: hidden;
+}
+
+.mobile .main_eidolon .article_eidolon .posttags_eidolon,
+.mobile .main_eidolon .article_eidolon .more_eidolon,
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon,
+.main_eidolon .article_eidolon.secondary .posttags_eidolon,
+.main_eidolon .article_eidolon.secondary .more_eidolon,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon {
+	width: 90%;
+	clear: both;
+	overflow: hidden;
+	float: left;
+	margin: 0 0 10px 0;
+	text-align: left;
+}
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon {
+margin: 0 0 2.5em 0;
+}
+.mobile .main_eidolon .article_eidolon .dateholder_eidolon span,
+.main_eidolon .article_eidolon.secondary .dateholder_eidolon span {
+float: left;
+margin: -6px 10px 0 0;
+}
+.pagination {
+	position: inherit;
+}
+.page-number {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+	margin: 0 0 20px 0;
+}
+
+
+}
+
+
+
+
+
+

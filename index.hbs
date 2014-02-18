@@ -1,0 +1,33 @@
+{{!< default}}
+{{> header}}
+<main class="main_eidolon" role="main">
+
+{{#foreach posts}}
+<article class="article_eidolon" role="article" itemscope itemtype="http://schema.org/Article">
+<span class="new"></span>
+<header class="postheader_eidolon">
+<div class="postimage_eidolon"><a href="{{url}}"></a></div>
+<h2 class="posttitle_eidolon" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h2>
+</header>
+<div class="excerpt_eidolon" itemprop="articleBody">
+{{content}}
+</div>
+{{#if tags}}
+<div class="posttags_eidolon">
+<span class="entypo-tag"></span>
+<div class="text">{{tags separator=" | "}}</div>
+</div>
+{{/if}}
+<a class="more_eidolon" href="{{url}}">Permalink</a>
+<div class="dateholder_eidolon">
+<span class="entypo-calendar"></span><time class="date_eidolon" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='DD MMM YYYY'}}</time>
+</div>
+</article>
+{{/foreach}}
+</main>
+{{#if pagination}}
+<div class="pagination_eidolon">
+{{{pagination}}}
+</div>
+{{/if}}
+{{> footer}}
